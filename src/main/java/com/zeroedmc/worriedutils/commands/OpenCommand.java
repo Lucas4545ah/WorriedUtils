@@ -7,7 +7,7 @@ import java.util.Arrays;
 public class OpenCommand {
     public static void executeCommand(String[] args) throws Exception {
         if(args.length >= 2) {
-            if(args[1].equalsIgnoreCase("C:/") || args[1].equalsIgnoreCase("C:")) {
+            if(args[1].equalsIgnoreCase("C:/") || args[1].equalsIgnoreCase("C:") || args[1].equalsIgnoreCase("C:\\")) {
                 File file = new File("C:/");
                 try {
                     if (!Desktop.isDesktopSupported()) {
