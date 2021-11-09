@@ -12,16 +12,16 @@ public class WorriedUtils {
     public static String versionType = "BETA";
     public static Double version = 0.2;
 
-    private static File configFile;
-    public static void createConfigFile() {
-        configFile = new File("C:/WorriedUtils/config.yml");
-        if(configFile.exists()) {
+    private static File logFile;
+    public static void createLogFile() {
+        logFile = new File("C:/WorriedUtils/log.txt");
+        if(logFile.exists()) {
             return;
         }
-        if(!(configFile.exists())) {
+        if(!(logFile.exists())) {
             new File("C:/WorriedUtils").mkdir();
             try {
-                configFile.createNewFile();
+                logFile.createNewFile();
             } catch(IOException e) {
                 e.printStackTrace();
             }
@@ -33,8 +33,9 @@ public class WorriedUtils {
         // Automatically run from console.
         AutoRunFromConsole.runYourselfInConsole(false);
 
-        // Create the config file, or if it exists, do nothing
-        createConfigFile();
+        createLogFile();
+
+        Logger.log(Logger.LoggerLevel.INFO, "Started WorriedUtils build b02_x64 successfully.");
 
         System.out.println(" ");
         System.out.println("Welcome to WorriedUtils!");
