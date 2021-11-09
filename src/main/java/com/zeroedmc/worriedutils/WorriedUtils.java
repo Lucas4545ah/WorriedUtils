@@ -10,7 +10,7 @@ import java.util.Scanner;
 public class WorriedUtils {
 
     public static String versionType = "BETA";
-    public static Double version = 0.1;
+    public static Double version = 0.2;
 
     private static File configFile;
     public static void createConfigFile() {
