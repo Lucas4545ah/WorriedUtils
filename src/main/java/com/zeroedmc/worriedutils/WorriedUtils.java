@@ -14,12 +14,12 @@ public class WorriedUtils {
 
     private static File logFile;
     public static void createLogFile() {
-        logFile = new File("C:/WorriedUtils/log.txt");
+        logFile = new File("~/WorriedUtils/log.txt");
         if(logFile.exists()) {
             return;
         }
         if(!(logFile.exists())) {
-            new File("C:/WorriedUtils").mkdir();
+            new File("~/WorriedUtils").mkdir();
             try {
                 logFile.createNewFile();
             } catch(IOException e) {
