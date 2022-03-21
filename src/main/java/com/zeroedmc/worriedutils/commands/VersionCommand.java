@@ -5,7 +5,7 @@ import com.zeroedmc.worriedutils.WorriedUtils;
 public class VersionCommand {
     public static void executeCommand(String[] args) throws Exception {
         if(args.length == 1) {
-            System.out.println("Currently running WorriedUtils version " + WorriedUtils.versionType + " " + WorriedUtils.version);
+            System.out.println("Currently running WorriedUtils version " + WorriedUtils.versionType + " " + WorriedUtils.version + "lxv");
         } else if(args.length > 1) {
             System.out.println("ERROR: Not enough arguments.");
         } else {
